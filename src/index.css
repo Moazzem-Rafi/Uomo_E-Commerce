@@ -1,1 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
+
+/* for all typohgraphy and color */
+@layer base {
+  body {
+    font-family: "Jost", sans-serif;
+  }
+}
+
+@theme {
+  /* for color */
+
+  --color-head: #222222;
+  --color-red: #d6001c;
+  --color-Second-red: #c32929;
+  --color-Second: #767676;
+  --color-white: #ffffff;
+  --color-third: #b9a16b;
+
+  /* for Background */
+  --color-primary: #faf9f8;
+  --color-slide: #f5e6e0;
+  --color-second: #eeeeee;
+  --color-footer: #e4e4e4;
+}
