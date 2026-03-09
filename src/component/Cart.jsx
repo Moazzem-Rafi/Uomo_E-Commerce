@@ -83,7 +83,7 @@ const StepIndicator = ({ currentStep = 0 }) => {
 
                         <div className={`flex items-baseline gap-2 ${isClickable ? 'hover:opacity-60' : ''}`}>
                             <span className="text-[12px] text-gray-400 font-medium">{step.num}</span>
-                            <span className={`text-[13px] font-bold tracking-wide ${isActive ? 'text-[#222222]' : 'text-gray-400'}`}>
+                            <span className={`text-[18px] font-medium tracking-wide ${isActive ? 'text-[#222222]' : 'text-gray-400'}`}>
                                 {step.label}
                             </span>
                         </div>
@@ -111,7 +111,7 @@ const Cart = () => {
             <div className="container px-6">
 
                 {/* Title */}
-                <h1 className="text-[28px] font-bold mb-8 tracking-tight">CART</h1>
+                <h1 className="head_35_bold pb-[48px]">CART</h1>
 
                 {/* Steps */}
                 <StepIndicator currentStep={0} />
