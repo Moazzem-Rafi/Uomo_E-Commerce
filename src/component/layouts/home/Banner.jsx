@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <>
-      <section id="banner">
+      <section>
         <div class="bg-[url('./assets/images/bannerBg.png')] pt-14.25 mx-15 bg-no-repeat bg-cover bg-center relative">
           <div className="container">
             <div className="flex items-end">
