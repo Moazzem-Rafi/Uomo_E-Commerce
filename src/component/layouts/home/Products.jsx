@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import product from "@/assets/images/product.png";
 import mixitup from "mixitup";
+import Button from "@/component/common/Button";
 
 const Products = () => {
   const containerRef = useRef(null);
@@ -141,6 +142,9 @@ const Products = () => {
                 discountPrice={"99"}
               />
             </div>
+          </div>
+          <div className="mt-10.5 text-center">
+            <Button className={"hover:after:w-24"} btnText={"SEE ALL PRODUCT"}/>
           </div>
         </div>
       </section>
