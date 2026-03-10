@@ -43,7 +43,7 @@ const allIcons = {
       id: 5,
       name: "Mobile Menu",
       icon: <HiMiniBars3CenterLeft />,
-      link: "#",
+      link: "/dashboard",
       badge: null,
     },
   ],

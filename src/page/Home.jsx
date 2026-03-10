@@ -8,6 +8,10 @@ const Home = () => {
     <>
       <Banner />
       <Collection/>
+      {/**
+       * name : shoumen 
+       * message : home Component ar all component import hobe
+      */}
     </>
   );
 };

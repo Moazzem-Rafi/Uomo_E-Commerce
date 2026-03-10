@@ -2,12 +2,18 @@ import React from "react";
 
 const Shop = () => {
   return (
-    <>
-      <section>
-        <div className="bg-[url('./assets/images/ShopBannerBg.png')] mx-20 bg-center bg-cover bg-no-repeat py-23.75"></div>
-        <div className="container"></div>
-      </section>
-    </>
+    <div>
+      <div className=" bg-red-500  flex items-center justify-center h-screen ">
+        <h1 className="text-[72px] text-white font-bold">
+          {" "}
+          This is Shop list page
+          {/**
+           *  name : Moazeem
+           *  shop list page ar all components akhane imort hobe
+           */}
+        </h1>
+      </div>
+    </div>
   );
 };
 
