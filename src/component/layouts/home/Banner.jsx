@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <>
-      <section id="banner">
+      <section>
         <div class="bg-[url('./assets/images/bannerBg.png')] pt-14.25 mx-15 bg-no-repeat bg-cover bg-center relative">
           <div className="container">
             <div className="flex items-end">
@@ -24,7 +24,7 @@ const Banner = () => {
                   SUMMER SALE STYLISH{" "}
                   <span className="head_70_bold">WOMENS</span>
                 </h1>
-                <Button btnText={"DISCOVER MORE"} />
+                <Button className={'hover:after:w-24'} btnText={"DISCOVER MORE"} />
                 {/* Slider */}
                 <div className="mt-48.75 mb-13.75"></div>
                 {/* Slider */}
