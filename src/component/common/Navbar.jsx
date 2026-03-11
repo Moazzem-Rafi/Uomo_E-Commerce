@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "./Container";
 import allImages from "@/helper/imagesProvider";
 import Images from "./Images";
@@ -10,6 +10,11 @@ const Navbar = () => {
   // for icon and images
   const { navLogo } = allImages;
   const { navIconItems } = allIcons;
+
+  // for manage state
+
+  const [hoverItems, setHoverITems] = useState(null);
+
   return (
     <nav className="pt-[29px] pb-[19px]">
       <Container>
@@ -23,16 +28,30 @@ const Navbar = () => {
             <ul className=" flex gap-x-[37px]">
               {navItems.map((items, index) => {
                 return items.label === "LOOKBOOK" ? (
-                  <li key={index} >
-                    <Link to={items.path} className="texts_14_medium text-head relative  after:absolute after:content-[''] after:w-[40%] after:h-[1.5px] after:bg-head after:bottom-[-3px] after:left-0 hover:after:w-full  after:duration-500 after:ease-in-out">
+                  <li key={index}>
+                    <Link
+                      to={items.path}
+                      className="texts_14_medium text-head relative  after:absolute after:content-[''] after:w-[40%] after:h-[1.5px] after:bg-head after:bottom-[-3px] after:left-0 hover:after:w-full  after:duration-500 after:ease-in-out"
+                    >
                       {items.label}
                     </Link>
                   </li>
                 ) : (
-                  <li key={index}>
+                  <li
+                    key={index}
+                    onMouseEnter={() => setHoverITems(items.label)}
+                    onMouseLeave={() => setHoverITems(null)}
+                    className="relative "
+                  >
                     <Link to={items.path} className="texts_14_medium text-head">
                       {items.label}
                     </Link>
+
+                    {items.hasMegaMenu && items.label === hoverItems && (
+                      <div className=" absolute bg-red-500">
+                        This is shop page...
+                      </div>
+                    )}
                   </li>
                 );
               })}
