@@ -164,7 +164,7 @@ const Tabs_desc = () => {
             <div className="animate-fadeIn space-y-8">
               {/* Review 1 */}
               <div className="border-b border-footer pb-5.75">
-                <h4 className="texts_18_medium text-head">Reviews</h4>
+                <h4 className="texts_16_medium text-head">Reviews</h4>
                 <div className="flex gap-x-4 md:gap-x-7.5 items-start md:items-center mt-6.5">
                   <div className="flex-shrink-0 w-12 md:w-auto">
                     <Images imgSrc={reviewOne} />
