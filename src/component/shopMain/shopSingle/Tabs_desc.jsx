@@ -8,46 +8,43 @@ const Tabs_desc = () => {
 
   return (
     <div className="w-full">
-  
-     <div className="flex flex-col sm:flex-row justify-center items-center sm:gap-x-10 lg:gap-x-19 gap-y-6 sm:gap-y-0 texts_16_medium text-[#767676]">
-  {/* DESCRIPTION Button */}
-  <button
-    onClick={() => setActiveTab("description")}
-    className={`relative hover:text-head after:content-[''] after:block after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:transition-all after:duration-300 ${
-      activeTab === "description"
-        ? "text-head after:w-full after:bg-head"
-        : "after:w-0 hover:after:w-full after:bg-head"
-    }`}
-  >
-    DESCRIPTION
-  </button>
+      <div className="flex flex-col sm:flex-row justify-center items-center sm:gap-x-10 lg:gap-x-19 gap-y-6 sm:gap-y-0 texts_16_medium text-[#767676]">
+        {/* DESCRIPTION Button */}
+        <button
+          onClick={() => setActiveTab("description")}
+          className={`relative hover:text-head after:content-[''] after:block after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:transition-all after:duration-300 ${
+            activeTab === "description"
+              ? "text-head after:w-full after:bg-head"
+              : "after:w-0 hover:after:w-full after:bg-head"
+          }`}
+        >
+          DESCRIPTION
+        </button>
 
-  {/* ADDITIONAL INFORMATION Button */}
-  <button
-    onClick={() => setActiveTab("additional")}
-    className={`relative hover:text-head after:content-[''] after:block after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:transition-all after:duration-300 ${
-      activeTab === "additional"
-        ? "text-head after:w-full after:bg-head"
-        : "after:w-0 hover:after:w-full after:bg-head"
-    }`}
-  >
-    ADDITIONAL INFORMATION
-  </button>
+        {/* ADDITIONAL INFORMATION Button */}
+        <button
+          onClick={() => setActiveTab("additional")}
+          className={`relative hover:text-head after:content-[''] after:block after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:transition-all after:duration-300 ${
+            activeTab === "additional"
+              ? "text-head after:w-full after:bg-head"
+              : "after:w-0 hover:after:w-full after:bg-head"
+          }`}
+        >
+          ADDITIONAL INFORMATION
+        </button>
 
-  {/* REVIEWS Button */}
-  <button
-    onClick={() => setActiveTab("reviews")}
-    className={`relative hover:text-head after:content-[''] after:block after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:transition-all after:duration-300 ${
-      activeTab === "reviews"
-        ? "text-head after:w-full after:bg-head"
-        : "after:w-0 hover:after:w-full after:bg-head"
-    }`}
-  >
-    REVIEWS (3)
-  </button>
-</div>
-
-      {/* Content Area - Padding Responsive kora hoyeche */}
+        {/* REVIEWS Button */}
+        <button
+          onClick={() => setActiveTab("reviews")}
+          className={`relative hover:text-head after:content-[''] after:block after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:transition-all after:duration-300 ${
+            activeTab === "reviews"
+              ? "text-head after:w-full after:bg-head"
+              : "after:w-0 hover:after:w-full after:bg-head"
+          }`}
+        >
+          REVIEWS (3)
+        </button>
+      </div>
       <div className={"px-4 md:px-20 lg:px-60 mt-8 md:mt-10 lg:mt-12.5"}>
         <Container>
           {/* DESCRIPTION CONTENT */}
@@ -65,7 +62,11 @@ const Tabs_desc = () => {
                   irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                   cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  mollit anim id est laborum. Sed ut perspiciatis unde omnis
+                  iste natus error sit voluptatem accusantium doloremque
+                  laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                  inventore veritatis et quasi architecto beatae vitae dicta
+                  sunt explicabo.
                 </p>
               </div>
               <div className="mt-9.75 flex flex-col md:flex-row gap-y-8 md:gap-x-20 lg:gap-x-37.5">
@@ -128,11 +129,21 @@ const Tabs_desc = () => {
           {activeTab === "additional" && (
             <div className="flex flex-row gap-x-10 md:gap-x-16 lg:gap-x-22.5 my-8 lg:my-12.5 animate-fadeIn">
               <div className="w-[100px] lg:w-[82px] space-y-[20px] lg:space-y-[31px]">
-                <h4 className="texts_16_medium text-head whitespace-nowrap">Weight</h4>
-                <h4 className="texts_16_medium text-head whitespace-nowrap">Dimensions</h4>
-                <h4 className="texts_16_medium text-head whitespace-nowrap">Size</h4>
-                <h4 className="texts_16_medium text-head whitespace-nowrap">Color</h4>
-                <h4 className="texts_16_medium text-head whitespace-nowrap">Storage</h4>
+                <h4 className="texts_16_medium text-head whitespace-nowrap">
+                  Weight
+                </h4>
+                <h4 className="texts_16_medium text-head whitespace-nowrap">
+                  Dimensions
+                </h4>
+                <h4 className="texts_16_medium text-head whitespace-nowrap">
+                  Size
+                </h4>
+                <h4 className="texts_16_medium text-head whitespace-nowrap">
+                  Color
+                </h4>
+                <h4 className="texts_16_medium text-head whitespace-nowrap">
+                  Storage
+                </h4>
               </div>
               <div className="space-y-[20px] lg:space-y-[31px]">
                 <h5 className="texts_14_regular text-head">1.25 kg</h5>
