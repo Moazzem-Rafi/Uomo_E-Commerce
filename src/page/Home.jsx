@@ -4,6 +4,7 @@ import Countdown from "@/component/layouts/home/Countdown";
 import Feature from "@/component/layouts/home/Feature";
 import LimitedEdition from "@/component/layouts/home/LimitedEdition";
 import Products from "@/component/layouts/home/Products";
+import Support from "@/component/layouts/home/Support";
 import Uomo from "@/component/layouts/home/Uomo";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -18,6 +19,7 @@ const Home = () => {
       <Feature/>
       <LimitedEdition/>
       <Uomo/>
+      <Support/>
     </>
   );
 };
