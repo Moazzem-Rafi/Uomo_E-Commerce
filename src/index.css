@@ -9,8 +9,7 @@
   }
 }
 .container {
-  max-width: 1410px;
-  margin: 0 auto;
+  @apply max-w-[1410px] mx-auto;
 }
 @theme {
   /* for color */
@@ -82,4 +81,8 @@
 
 .texts_13_regular {
   @apply font-normal text-[13px]/[24px];
+}
+
+.table-head th{
+  @apply font-medium text-smtext-[#222] leading-6
 }

@@ -39,7 +39,7 @@ const DashboardItems = () => {
               return (
                 <li key={item.path}>
                   <Link
-                  onClick={() => setHeaderTitle(item.label)}
+                  onClick={() => setHeaderTitle(item.label  === "DASHBOARD" ? "MY ACCOUNT" : item.label)}
                     to={item.path}
                     style={{
                       fontWeight: "500",
