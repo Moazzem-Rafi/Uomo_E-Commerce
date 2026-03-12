@@ -19,11 +19,11 @@ const DashboardOrder = () => {
           <table className='w-full border-collapse text-sm'>
             <thead>
               <tr className='bg-[#E4E4E4] table-head '>
-                <th className='text-left px-4 py-3 text-xs uppercase'>Order</th>
-                <th className='text-left px-4 py-3 text-xs  uppercase'>Date</th>
-                <th className='text-left px-4 py-3 text-xs   uppercase'>Status</th>
-                <th className='text-left px-4 py-3 text-xs uppercase'>Total</th>
-                <th className='text-left px-4 py-3 text-xs   uppercase'>Actions</th>
+                <th className='text-left  px-8   pt-4 pb-2.5 text-xs uppercase'>Order</th>
+                <th className='text-left  px-8   pt-4 pb-2.5 text-xs  uppercase'>Date</th>
+                <th className='text-left px-8     pt-4 pb-2.5 text-xs   uppercase'>Status</th>
+                <th className='text-left  px-8   pt-4 pb-2.5 text-xs uppercase'>Total</th>
+                <th className='text-left  px-8    pt-4 pb-2.5 text-xs   uppercase'>Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -34,13 +34,13 @@ const DashboardOrder = () => {
                   onMouseEnter={() => setHovered(i)}
                   onMouseLeave={() => setHovered(null)}
                 >
-                  <td className='px-4 pt-12 pb-9.5'>
+                  <td className=' pt-12 px-8  pb-9.5'>
                     <a href='#' className='text-gray-800 font-medium hover:underline text-sm'>{order.id}</a>
                   </td>
-                  <td className='px-4 pt-12 pb-9.5 text-gray-500 text-sm'>{order.date}</td>
-                  <td className='px-4 pt-12 pb-9.5 text-gray-500 text-sm'>{order.status}</td>
-                  <td className='px-4 pt-12 pb-9.5 text-gray-500 text-sm'>{order.total} for {order.items} items</td>
-                  <td className='px-4 pt-12 pb-9.5'>
+                  <td className=' pt-12 px-8  pb-9.5 text-gray-500 text-sm'>{order.date}</td>
+                  <td className=' pt-12 px-8  pb-9.5 text-gray-500 text-sm'>{order.status}</td>
+                  <td className=' pt-12 px-8  pb-9.5 text-gray-500 text-sm'>{order.total} for {order.items} items</td>
+                  <td className=' pt-12 px-8  pb-9.5'>
                     <button className='bg-black text-white text-xs font-semibold tracking-widest pt-3.75 pl-12.5 pb-2.75 pr-13.5  hover:bg-gray-800 transition-colors duration-200 cursor-pointer'>
                       VIEW
                     </button>

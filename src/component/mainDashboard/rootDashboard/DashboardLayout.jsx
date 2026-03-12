@@ -5,15 +5,15 @@ import DashborardItems from "../dashborarAllComponent/DashborardItems";
 
 const DashboardLayout = () => {
   return (
-    <section>
+    <section className="pt-22.5 pb-25">
       <Container>
         <div className="grid grid-cols-4">
           <aside>
             <DashborardItems />
           </aside>
-          {/* <main className="col-span-3">
+          <main className="col-span-3">
             <Outlet />
-          </main> */}
+          </main>
         </div>
       </Container>
     </section>
