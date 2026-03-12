@@ -71,12 +71,15 @@ const router = createBrowserRouter([
             element: <DashboardAccDetails />,
           },
           { path: "/dashboard/wishlist", element: <DashboardWishlist /> },
-          { path: "/dashboard/logout", element: <LogOut /> },
           { path: "/dashboard/downloads", element: <DashboardDownload /> },
         ],
       },
-      //Faq 
+      // for Faq 
       {path: "faq", element:<Faq/>},
+      
+      //for logout
+      { path: "/logout", element: <LogOut /> },
+
       // 404 not found
       { path: "*", element: <NotFound /> },
     ],

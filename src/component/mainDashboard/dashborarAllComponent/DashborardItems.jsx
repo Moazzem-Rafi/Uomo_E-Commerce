@@ -12,7 +12,7 @@ const menuItems = [
   { label: "ADDRESSES",       path: "address" },
   { label: "ACCOUNT DETAILS", path: "account-details" },
   { label: "WISHLIST",        path: "wishlist" },
-  { label: "LOGOUT",          path: "logout" },
+  { label: "LOGOUT",          path: "/logout" },
 ];
 
 
