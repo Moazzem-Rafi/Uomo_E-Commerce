@@ -1,8 +1,13 @@
+import Container from '@/component/common/Container'
 import React from 'react'
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <section>
+        <Container>
+            <h2 className='head_35_bold text-head' >The Blog</h2>
+        </Container>
+    </section>
   )
 }
 
