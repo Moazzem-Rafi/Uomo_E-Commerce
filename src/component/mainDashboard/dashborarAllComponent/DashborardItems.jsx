@@ -8,9 +8,9 @@ const menuItems = [
   { label: "DOWNLOADS", path: "downloads" },
   { label: "ADDRESSES", path: "address" },
   { label: "ACCOUNT DETAILS", path: "account-details" },
-  { label: "WISHLIST", path: "wishlist" },
-  { label: "LOGOUT", path: "/logout" },
-];
+  { label: "WISHLIST",        path: "wishlist" },
+  { label: "LOGOUT",          path: "/logout" },
+]; 
 
 const DashboardItems = () => {
   const location = useLocation();

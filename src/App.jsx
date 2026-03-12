@@ -74,7 +74,7 @@ const router = createBrowserRouter([
           { path: "/dashboard/downloads", element: <DashboardDownload /> },
         ],
       },
-      //Faq 
+      // for Faq 
       {path: "faq", element:<Faq/>},
       
       //for logout
@@ -84,7 +84,7 @@ const router = createBrowserRouter([
       { path: "*", element: <NotFound /> },
     ],
   },
-]);
+]); 
 
 // Create a client
 const queryClient = new QueryClient();
