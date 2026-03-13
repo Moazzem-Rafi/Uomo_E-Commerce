@@ -25,6 +25,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Faq from "./page/Faq";
 import Contact from "./component/contactUs/Contact";
 import BlogPost from "./page/BlogPost";
+import Store_location from "./component/storeLocator/Store_location";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,7 @@ const router = createBrowserRouter([
       { path: "shop", element: <Shop /> },
       { path: "shop-single", element: <ShopSinglePg /> },
       { path: "contact", element: <Contact /> },
+      { path: "store_location", element: <Store_location /> },
 
       // for shopping cart route
       {
