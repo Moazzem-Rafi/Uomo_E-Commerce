@@ -44,10 +44,10 @@ const ShopCheckout = () => {
   };
 
   const inputClass =
-    "w-full border border-footer px-5.5 pt-5.25 pb-4 text-sm text-head placeholder:text-second outline-none focus:border-head transition-colors bg-white leading-6";
+    "w-full border-2 border-footer px-5.5 pt-5.25 pb-4 px-4 text-sm text-head outline-none bg-white appearance-none cursor-pointer focus:border-head leading-6";
 
   return (
-    <div className="flex flex-col lg:flex-row gap-10 items-start">
+    <div className="flex flex-col lg:flex-row gap-15 items-start">
       {/* ── Left: Billing Details ── */}
       <div className="flex-1 max-w-232.5">
         <h2 className="text-[16px] font-medium text-head leading-[100%] md:mb-6 lg:mb-8.5">
@@ -55,7 +55,7 @@ const ShopCheckout = () => {
         </h2>
 
         {/* First / Last */}
-        <div className="flex md:gap-4 lg:gap-7.5 md:mb-4 lg:mb-7.5">
+        <div className="flex gap-4 lg:gap-7.5 mb-4 lg:mb-7.5">
           <input
             name="firstName"
             value={form.firstName}
@@ -73,7 +73,7 @@ const ShopCheckout = () => {
         </div>
 
         {/* Company */}
-        <div className="md:mb-4 lg:mb-7.75">
+        <div className="mb-4 lg:mb-7.75">
           <input
             name="company"
             value={form.company}
@@ -84,7 +84,7 @@ const ShopCheckout = () => {
         </div>
 
         {/* Country */}
-        <div className="mb-4 relative border border-footer focus-within:border-head focus:border-2 focus:border-head transition-colors pb-3.75">
+        <div className="mb-4 relative border border-footer transition-colors">
           <label className="absolute -top-2.5 left-3 bg-white px-1 text-[14px] text-head leading-6">
             Country / Region *
           </label>
@@ -92,7 +92,7 @@ const ShopCheckout = () => {
             name="country"
             value={form.country}
             onChange={handle}
-            className="w-full h-13 pt-4 pb-1 px-4 text-sm text-head outline-none bg-white appearance-none cursor-pointer"
+            className="w-full pt-5.25 pb-3.75 px-4 text-sm text-head outline-none bg-white appearance-none cursor-pointer border-2 border-transparent focus:border-2 focus:border-head"
           >
             <option value="">Select a country / region</option>
             <option value="Turkey">Turkey</option>
@@ -106,7 +106,7 @@ const ShopCheckout = () => {
         </div>
 
         {/* Street Address */}
-        <div className="mb-4 flex flex-col gap-3">
+        <div className="mb-4 flex flex-col gap-2.5">
           <input
             name="streetAddress"
             value={form.streetAddress}
@@ -193,7 +193,7 @@ const ShopCheckout = () => {
                 name={cb.name}
                 checked={form[cb.name]}
                 onChange={handle}
-                className="w-4 h-4 border border-gray-300 rounded-none accent-head cursor-pointer shrink-0"
+                className="w-4 h-4 border border-footer rounded-none accent-head cursor-pointer shrink-0"
               />
               <span className="text-sm text-head font-medium">{cb.label}</span>
             </label>
@@ -207,7 +207,7 @@ const ShopCheckout = () => {
           onChange={handle}
           placeholder="Order Notes (optional)"
           rows={5}
-          className="w-full border border-[#E4E4E4] px-4 py-3 text-sm text-head placeholder:text-[#767676] outline-none focus:border-head transition-colors bg-white resize-none"
+          className="w-full border border-footer px-4 py-3 text-sm text-head placeholder:text-second outline-none focus:border-head transition-colors bg-white resize-none"
         />
       </div>
 
