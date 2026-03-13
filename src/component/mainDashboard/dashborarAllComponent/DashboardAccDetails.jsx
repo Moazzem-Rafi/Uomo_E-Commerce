@@ -7,29 +7,29 @@ const DashboardAccDetails = () => {
       <Container>
         <div className="w-full mt-25">
           {/* First Name + Last Name */}
-          <div className="flex flex-col sm:flex-row gap-[27px] mb-3">
+          <div className="flex flex-col sm:flex-row gap-[27px] mb-7.5">
             <div className="flex-1 border border-[#c8dde9]">
               <input
                 type="text"
                 placeholder="First Name"
-                className="w-full px-3 py-2 sm:py-3 text-sm text-gray-800 outline-none bg-transparent placeholder-gray-400"
+                className="w-full px-3 py-2 sm:py-3 lg:pl-[22px] lg:pt-[20px] lg:pb-[15px] lg:pr-0 text-sm text-gray-800 outline-none bg-transparent placeholder-gray-400"
               />
             </div>
             <div className="flex-1 border border-[#c8dde9]">
               <input
                 type="text"
                 placeholder="Last Name"
-                className="w-full px-3 py-2 sm:py-3 text-sm text-gray-800 outline-none bg-transparent placeholder-gray-400"
+                className="w-full px-3 py-2 sm:py-3 lg:pl-[22px] lg:pt-[20px] lg:pb-[15px] lg:pr-0 text-sm text-gray-800 outline-none bg-transparent placeholder-gray-400"
               />
             </div>
           </div>
 
           {/* Display Name */}
-          <div className="border border-[#c8dde9] mb-3">
+          <div className="border border-[#c8dde9] mb-7.5">
             <input
               type="text"
               placeholder="Display Name"
-              className="w-full px-3 py-2 sm:py-3 text-sm text-gray-800 outline-none bg-transparent placeholder-gray-400"
+              className="w-full px-3 py-2 sm:py-3 lg:pl-[22px] lg:pt-[20px] lg:pb-[15px] lg:pr-0 text-sm text-gray-800 outline-none bg-transparent placeholder-gray-400"
             />
           </div>
 
@@ -38,29 +38,29 @@ const DashboardAccDetails = () => {
             <input
               type="email"
               placeholder="Email Address"
-              className="w-full px-3 py-2 sm:py-3 text-sm text-gray-800 outline-none bg-transparent placeholder-gray-400"
+              className="w-full px-3 py-2 sm:py-3 lg:pl-[22px] lg:pt-[20px] lg:pb-[15px] lg:pr-0 text-sm text-gray-800 outline-none bg-transparent placeholder-gray-400"
             />
           </div>
 
           {/* Password Change */}
           <div className="pt-4">
-            <p className="text-[11px] font-bold tracking-widest uppercase text-gray-900 mb-3">
+            <p className="text-[11px] font-bold tracking-widest uppercase text-gray-900 mb-7.5">
               Password Change
             </p>
 
-            <div className="border border-[#c8dde9] mb-3 focus-within:border-gray-400 transition-all">
+            <div className="border border-[#c8dde9] mb-7.5 focus-within:border-gray-400 transition-all">
               <input
                 type="password"
                 placeholder="Current password (leave blank to leave unchanged)"
-                className="w-full px-3 py-2 sm:py-3 text-xs sm:text-sm text-gray-800 outline-none bg-transparent placeholder-gray-400"
+                className="w-full px-3 py-2 sm:py-3 lg:pl-5.5 lg:pt-5 lg:pb-3.75 lg:pr-0 text-xs sm:text-sm text-gray-800 outline-none bg-transparent placeholder-gray-400"
               />
             </div>
 
-            <div className="border border-[#c8dde9] mb-3 focus-within:border-gray-400 transition-all">
+            <div className="border border-[#c8dde9] mb-7.5 focus-within:border-gray-400 transition-all">
               <input
                 type="password"
                 placeholder="New password (leave blank to leave unchanged)"
-                className="w-full px-3 py-2 sm:py-3 text-xs sm:text-sm text-gray-800 outline-none bg-transparent placeholder-gray-400"
+                className="w-full px-3 py-2 sm:py-3 lg:pl-[22px] lg:pt-[20px] lg:pb-[15px] lg:pr-0 text-xs sm:text-sm text-gray-800 outline-none bg-transparent placeholder-gray-400"
               />
             </div>
 
@@ -68,14 +68,14 @@ const DashboardAccDetails = () => {
               <input
                 type="password"
                 placeholder="Confirm new password"
-                className="w-full px-3 py-2 sm:py-3 text-xs sm:text-sm text-gray-800 outline-none bg-transparent placeholder-gray-400"
+                className="w-full px-3 py-2 sm:py-3 lg:pl-[22px] lg:pt-[20px] lg:pb-[15px] lg:pr-0 text-xs sm:text-sm text-gray-800 outline-none bg-transparent placeholder-gray-400"
               />
             </div>
           </div>
 
           {/* Save Button */}
           <div className="pt-4 pb-5">
-            <button className="w-full sm:w-auto bg-black text-white text-[10px] sm:text-[11px] font-bold tracking-widest uppercase px-6 sm:px-10 py-3 sm:py-4 hover:bg-gray-800 transition-colors">
+            <button className="w-full sm:w-auto bg-black text-white text-[10px] sm:text-[11px] font-bold tracking-widest uppercase px-6 sm:px-10 py-3 sm:py-4 lg:pl-25 lg:pt-5.25 lg:pr-23.5  lg:pb-3.75   hover:bg-gray-800 transition-colors">
               Save Changes
             </button>
           </div>

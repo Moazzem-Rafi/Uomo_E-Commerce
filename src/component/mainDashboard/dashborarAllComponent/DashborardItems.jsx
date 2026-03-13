@@ -17,7 +17,7 @@ const DashboardItems = () => {
   const [activeItem, setActiveItem] = useState("My Account");
 
   return (
-    <section className="">
+    <section className=" ">
       <Container>
         <div className="flex ">
           {/* Sidebar */}
