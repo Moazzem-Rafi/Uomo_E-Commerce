@@ -8,6 +8,8 @@ import Support from "@/component/layouts/home/Support";
 import Uomo from "@/component/layouts/home/Uomo";
 import React from "react";
 import { Link } from "react-router-dom";
+import BlogList from "./BlogList";
+import Blog from "@/component/common/Blog";
 
 const Home = () => {
   return (
@@ -20,6 +22,9 @@ const Home = () => {
       <LimitedEdition/>
       <Uomo/>
       <Support/>
+      <BlogList/>
+      <Blog/>
+      
     </>
   );
 };
