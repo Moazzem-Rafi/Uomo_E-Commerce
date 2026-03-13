@@ -24,6 +24,7 @@ import CartLayout from "./component/shopMain/shopPage/cartLayout/CartLayout";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Faq from "./page/Faq";
 import Contact from "./component/contactUs/Contact";
+import BlogPost from "./page/BlogPost";
 
 const router = createBrowserRouter([
   {
@@ -46,7 +47,6 @@ const router = createBrowserRouter([
       { path: "shop", element: <Shop /> },
       { path: "shop-single", element: <ShopSinglePg /> },
       { path: "contact", element: <Contact /> },
-
 
       // for shopping cart route
       {
@@ -74,20 +74,22 @@ const router = createBrowserRouter([
           },
           { path: "/dashboard/wishlist", element: <DashboardWishlist /> },
           { path: "/dashboard/downloads", element: <DashboardDownload /> },
-
         ],
       },
-      // for Faq 
-      {path: "faq", element:<Faq/>},
-      
+      // for Faq
+      { path: "faq", element: <Faq /> },
+
       //for logout
       { path: "/logout", element: <LogOut /> },
+
+      // for blog-post
+      { path: "/elements/blog-posts", element: <BlogPost /> },
 
       // 404 not found
       { path: "*", element: <NotFound /> },
     ],
   },
-]); 
+]);
 
 // Create a client
 const queryClient = new QueryClient();
