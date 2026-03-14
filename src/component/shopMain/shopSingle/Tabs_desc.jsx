@@ -120,7 +120,7 @@ const Tabs_desc = () => {
                 </div>
               </div>
               <h4 className="texts_16_medium text-head pt-9.25">Lining</h4>
-              <p className="texts_14_regular text-head">
+              <p className="texts_14_regular text-head pb-4 lg:pb-0">
                 100% Polyester, Main: 100% Polyeste
               </p>
             </div>
@@ -194,7 +194,7 @@ const Tabs_desc = () => {
               </div>
 
               {/* Review 2 */}
-              <div className="mt-7.5">
+              <div className="my-7.5">
                 <div className="flex gap-x-4 md:gap-x-7.5 items-start md:items-center">
                   <div className="flex-shrink-0 w-12 md:w-auto">
                     <Images imgSrc={reviewOne} />
