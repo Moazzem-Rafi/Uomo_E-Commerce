@@ -1,35 +1,33 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { GoPlus } from "react-icons/go";
-import { AiOutlineMinus } from "react-icons/ai";
 
 const FaqItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-200">
+    <div
+      className="border-b"
+      style={{ borderColor: isOpen ? "#111111" : "#E4E4E4", borderBottomWidth: isOpen ? "3px" : "1px" }}
+    >
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex justify-between items-center py-4 text-left group"
+        className="w-full flex justify-between items-center py-4 text-left"
       >
         <span
-          className={`text-[13px] leading-snug transition-colors duration-200 ${
-            isOpen ? "text-gray-900 font-medium" : "text-gray-700"
-          }`}
+          className="text-[13px] leading-snug text-gray-800"
+          style={{ fontWeight: isOpen ? "500" : "400" }}
         >
           {question}
         </span>
 
+        {/* Icon: + or − with rotate animation */}
         <motion.span
           animate={{ rotate: isOpen ? 45 : 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="ml-4 flex-shrink-0 text-gray-500 group-hover:text-gray-900 transition-colors duration-200"
+          className="ml-4 flex-shrink-0 text-gray-700 text-[18px] leading-none select-none"
+          style={{ display: "inline-block" }}
         >
-          {isOpen ? (
-            <AiOutlineMinus size={16} />
-          ) : (
-            <GoPlus size={16} />
-          )}
+          +
         </motion.span>
       </button>
 
