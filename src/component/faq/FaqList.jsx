@@ -6,7 +6,7 @@ const FaqList = ({ faqs }) => {
       {faqs.map((section) => (
         <div key={section.id}>
           {/* Category heading */}
-          <h2 className="text-[22px] font-normal text-gray-800 mb-1">
+          <h2 className="head_26_medium leading-[100%] mb-6">
             {section.category}
           </h2>
 
