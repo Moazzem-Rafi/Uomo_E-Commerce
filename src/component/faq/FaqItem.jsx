@@ -13,7 +13,7 @@ const FaqItem = ({ question, answer }) => {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex justify-between items-center text-left"
       >
-        <span className="text-[13px] leading-snug text-gray-800">
+        <span className="texts_16_medium text-head mb-7.25">
           {question}
         </span>
 
@@ -50,7 +50,7 @@ const FaqItem = ({ question, answer }) => {
         </motion.span>
       </button>
 
-      {/* Border —  question nice */}
+      {/* Border and question nice */}
       <div
         style={{
           borderBottom: isOpen ? "3px solid #111111" : "1px solid #E4E4E4",
