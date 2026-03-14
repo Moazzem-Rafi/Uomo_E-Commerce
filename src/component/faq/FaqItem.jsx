@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { FiPlus, FiMinus } from "react-icons/fi";
 
 const FaqItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,24 +16,48 @@ const FaqItem = ({ question, answer }) => {
           {question}
         </span>
 
+        {/* Icon smooth transition */}
         <motion.span
-          animate={{ rotate: isOpen ? 45 : 0 }}
+          animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="ml-4 shrink-0 text-gray-700 text-[18px] leading-none select-none"
-          style={{ display: "inline-block" }}
+          className="ml-4 flex-shrink-0 text-gray-700"
+          style={{ display: "inline-flex" }}
         >
-          +
+          <AnimatePresence mode="wait" initial={false}>
+            {isOpen ? (
+              <motion.span
+                key="minus"
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.5 }}
+                transition={{ duration: 0.2 }}
+              >
+                <FiMinus size={16} />
+              </motion.span>
+            ) : (
+              <motion.span
+                key="plus"
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.5 }}
+                transition={{ duration: 0.2 }}
+              >
+                <FiPlus size={16} />
+              </motion.span>
+            )}
+          </AnimatePresence>
         </motion.span>
       </button>
 
-      {/* Border — সবসময় question এর নিচে, শুধু color/width বদলায় */}
+      {/* Border — সবসময় question এর নিচে */}
       <div
         style={{
           borderBottom: isOpen ? "3px solid #111111" : "1px solid #E4E4E4",
+          transition: "border 0.3s ease",
         }}
       />
 
-      {/* Answer — border এর নিচে */}
+      {/* Answer */}
       <AnimatePresence initial={false}>
         {isOpen && (
           <motion.div
