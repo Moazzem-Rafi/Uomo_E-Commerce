@@ -9,7 +9,6 @@ const FaqList = ({ faqs }) => {
           <h2 className="head_26_medium leading-[100%] mb-6">
             {section.category}
           </h2>
-
           {/* Items */}
           <div>
             {section.items.map((item) => (

@@ -50,7 +50,7 @@ const FaqItem = ({ question, answer }) => {
         </motion.span>
       </button>
 
-      {/* Border —  question nice */}
+      {/* Border and question nice */}
       <div
         style={{
           borderBottom: isOpen ? "3px solid #111111" : "1px solid #E4E4E4",
