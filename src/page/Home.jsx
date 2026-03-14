@@ -10,6 +10,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BlogList from "../component/blogPost/BlogList";
 import Blog from "@/component/common/Blog";
+import SingleBlog from "@/component/common/SingleBlog";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <LimitedEdition />
       <Uomo />
       <Support />
+      <SingleBlog/>
     </>
   );
 };
