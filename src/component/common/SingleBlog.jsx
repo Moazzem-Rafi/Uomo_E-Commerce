@@ -22,7 +22,7 @@ const SingleBlog = () => {
           </div>
           <Images className={"mb-12.5"} imgSrc={blogImg} />
           <div className="pl-60">
-            <p className="texts_14_regular text-head w-232.5">
+            <p className="w-[1158px] texts_14_regular text-head pb-15">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
               sapien dignissim a elementum. Sociis metus, hendrerit mauris id
               in. Quis sit sit ultrices tincidunt euismod luctus diam. Turpis
@@ -36,14 +36,10 @@ const SingleBlog = () => {
               fermentum iaculis pharetra, maecenas dui nullam nullam rhoncus.
               Facilisis quis vulputate sem gravida lacus, justo placerat.
             </p>
-
-            <div className="mt-10 mb-6">
-              <h2 className="texts_16_medium text-head">
-                Sed do eiusmod tempor incididunt ut labore
-              </h2>
-            </div>
-
-            <p className="texts_14_regular text-head w-232.5 mb-7.5">
+            <h5 className="texts_16_medium text-head">
+              Sed do eiusmod tempor incididunt ut labore
+            </h5>
+            <p className="texts_14_regular text-head w-[1158px]">
               Saw wherein fruitful good days image them, midst, waters upon,
               saw. Seas lights seasons. Fourth hath rule Evening Creepeth own
               lesser years itself so seed fifth for grass evening fourth shall
