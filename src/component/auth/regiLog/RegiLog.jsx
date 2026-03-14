@@ -22,7 +22,7 @@ const RegiLog = () => {
   const [errors, setErrors] = useState({});
 
   const loginInputs = [
-    { id: 1, name: "email", type: "email", placeholder: "Email address *" },
+    { id: 1, name: "email", type: "email", placeholder: "Username or email address *" },
     {
       id: 2,
       name: "password",
@@ -179,28 +179,28 @@ const RegiLog = () => {
         <div className="container pt-43 pb-25">
           <div className=" px-5 max-w-162.75 mx-auto">
             {/* ── Tabs ── */}
-            <div className="flex justify-center gap-10  mb-10">
+            <div className="flex justify-center gap-10 mb-10">
               <button
                 onClick={() => switchTab("login")}
-                className={`pb-3 text-sm font-semibold tracking-widest transition-colors relative
-                     after:absolute after:content-[''] after:h-0.5 after:bg-head after:-bottom-0.5 after:left-0 after:duration-500 after:ease-in-out
-                    ${
-                        activeTab === "login"
-                        ? "text-head after:w-full"
-                        : "text-gray-400 after:w-0 hover:after:w-full"
-                }`}
+                className={`texts_16_medium text-head pb-0.5 tracking-widest transition-all relative
+      after:absolute after:content-[''] after:h-0.5 after:bg-head after:-bottom-0.5 after:left-0 after:duration-500 after:ease-in-out
+      ${
+        activeTab === "login"
+          ? "after:w-full"
+          : "opacity-40 after:w-0 hover:opacity-100 hover:after:w-full"
+      }`}
               >
                 LOGIN
               </button>
               <button
                 onClick={() => switchTab("register")}
-                className={`pb-3 text-sm font-semibold tracking-widest transition-colors relative
-                    after:absolute after:content-[''] after:h-0.5 after:bg-head after:-bottom-0.5 after:left-0 after:duration-500 after:ease-in-out
-                    ${
-                        activeTab === "register"
-                        ? "text-head after:w-full"
-                        : "text-gray-400 after:w-0 hover:after:w-full"
-                }`}
+                className={`texts_16_medium text-head pb-0.5 tracking-widest transition-all relative
+      after:absolute after:content-[''] after:h-0.5 after:bg-head after:-bottom-0.5 after:left-0 after:duration-500 after:ease-in-out
+      ${
+        activeTab === "register"
+          ? "after:w-full"
+          : "opacity-40 after:w-0 hover:opacity-100 hover:after:w-full"
+      }`}
               >
                 REGISTER
               </button>
@@ -231,7 +231,7 @@ const RegiLog = () => {
                           className="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer text-gray-500"
                           onClick={() => setShowPassword(!showpassword)}
                         >
-                          {showpassword ? <FaEyeSlash /> : <FaEye />}
+                          {showpassword ? <FaEye /> : < FaEyeSlash />}
                         </span>
                       )}
                     </div>
@@ -305,7 +305,7 @@ const RegiLog = () => {
                           className="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer text-gray-500"
                           onClick={() => setShowRegPassword(!showRegPassword)}
                         >
-                          {showRegPassword ? <FaEyeSlash /> : <FaEye />}
+                          {showRegPassword ? < FaEye/> : <FaEyeSlash />}
                         </span>
                       )}
                       {input.name === "confirmpassword" && (
@@ -315,7 +315,7 @@ const RegiLog = () => {
                             setShowConfirmPassword(!showConfirmPassword)
                           }
                         >
-                          {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
+                          {showConfirmPassword ? < FaEye/> : < FaEyeSlash/>}
                         </span>
                       )}
                     </div>
