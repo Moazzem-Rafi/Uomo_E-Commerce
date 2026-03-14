@@ -9,7 +9,7 @@ const Tabs_desc = () => {
 
   return (
     <div className="w-full">
-      <div className="flex flex-col sm:flex-row justify-center items-center sm:gap-x-10 lg:gap-x-19 gap-y-6 sm:gap-y-0 texts_16_medium text-[#767676]">
+      <div className="flex flex-col sm:flex-row justify-center items-center sm:gap-x-10 xl:gap-x-19 gap-y-6 sm:gap-y-0 texts_16_medium text-[#767676]">
         {/* DESCRIPTION Button */}
         <button
           onClick={() => setActiveTab("description")}
@@ -46,7 +46,7 @@ const Tabs_desc = () => {
           REVIEWS (3)
         </button>
       </div>
-      <div className={"px-4 md:px-20 lg:px-60 mt-8 md:mt-10 lg:mt-12.5"}>
+      <div className={"px-4 md:px-20 xl:px-60 mt-8 md:mt-10 lg:mt-12.5"}>
         <Container>
           {/* DESCRIPTION CONTENT */}
           {activeTab === "description" && (
@@ -55,7 +55,7 @@ const Tabs_desc = () => {
                 <h5 className="texts_16_medium text-head">
                   Sed do eiusmod tempor incididunt ut labore
                 </h5>
-                <p className="texts_14_regular text-head w-full lg:w-232.5 leading-7.5 pt-6 lg:pt-11.25 text-justify lg:text-left">
+                <p className="texts_14_regular text-head w-full xl:w-232.5 leading-7.5 pt-6 lg:pt-11.25 text-justify lg:text-left">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -70,7 +70,7 @@ const Tabs_desc = () => {
                   sunt explicabo.
                 </p>
               </div>
-              <div className="mt-9.75 flex flex-col md:flex-row gap-y-8 md:gap-x-20 lg:gap-x-37.5">
+              <div className="mt-9.75 flex flex-col md:flex-row gap-y-8 md:gap-x-20 xl:gap-x-37.5">
                 <div className="">
                   <h4 className="texts_16_medium text-head">
                     Why choose product?
