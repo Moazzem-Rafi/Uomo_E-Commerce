@@ -2,16 +2,30 @@ import allIcons from "@/helper/iconProvider";
 import allImages from "@/helper/imagesProvider";
 
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { navTabsData } from "@/helper/projectArrayObj";
 import Images from "../common/Images";
 
-const NavTabs = ({unMount}) => {
+const NavTabs = ({ unMount }) => {
   const { close } = allIcons;
   const { navtabImg } = allImages;
   const [activeTab, setActiveTab] = useState(0);
+  const navtabRef = useRef(null);
 
   const currentData = navTabsData[activeTab];
+
+  useEffect(() => {
+    const handleDocumentClick = (event) => {
+      if (navtabRef.current && !navtabRef.current.contains(event.target)) {
+        unMount(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleDocumentClick);
+    return () => {
+      document.removeEventListener("mousedown", handleDocumentClick);
+    };
+  }, [unMount]);
 
   return (
     <div className="fixed inset-0 z-[999] flex">
@@ -25,10 +39,15 @@ const NavTabs = ({unMount}) => {
       </div>
 
       {/* Right — menu */}
-      <div className="w-[50%] bg-white flex flex-col relative">
+      <div ref={navtabRef} className="w-[50%] bg-white flex flex-col relative">
         {/* Close — top right of entire screen */}
         <div className="absolute top-6 right-8">
-          <span className="text-2xl cursor-pointer text-head " onClick={()=>unMount(null)}>{close}</span>
+          <span
+            className="text-2xl cursor-pointer text-head "
+            onClick={() => unMount(null)}
+          >
+            {close}
+          </span>
         </div>
 
         {/* Tabs — WOMEN / MEN / KIDS */}

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { cartItems } from "@/helper/projectArrayObj";
 import Images from "@/component/common/Images";
 
-const AddToCart = ({unMount}) => {
+const AddToCart = ({ unMount }) => {
   const { close } = allIcons;
 
   const subtotal = cartItems.reduce(
@@ -20,7 +20,12 @@ const AddToCart = ({unMount}) => {
         <p className="texts_16_medium text-head tracking-wider">
           SHOPPING BAG ( {cartItems.length} )
         </p>
-        <span className="text-2xl cursor-pointer" onClick={()=>unMount('hello world')}>{close}</span>
+        <span
+          className="text-2xl cursor-pointer"
+          onClick={() => unMount("hello world")}
+        >
+          {close}
+        </span>
       </div>
 
       {/* Cart Items */}
@@ -90,7 +95,7 @@ const AddToCart = ({unMount}) => {
 
         {/* Checkout */}
         <Link
-          to="/checkout"
+          to="/cart/shoping-and-checkout"
           className="w-full bg-head text-center texts_14_medium text-white tracking-widest py-4 cursor-pointer"
         >
           CHECKOUT

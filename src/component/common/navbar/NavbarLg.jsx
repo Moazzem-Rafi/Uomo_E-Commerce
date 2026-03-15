@@ -22,6 +22,7 @@ const NavbarLg = () => {
   const [hoverItems, setHoverITems] = useState(null);
   const [open, setIsOpen] = useState(null);
 
+
   //  for handle evetnt
 
   const handleclicked = (id) => {
@@ -110,7 +111,7 @@ const NavbarLg = () => {
                                       )}
                                     </ul>
                                   </div>
-                                 </div>
+                                </div>
                                 <div className=" col-span-2 flex justify-center ">
                                   <div className="">
                                     <p className="texts_14_medium text-second pb-3">
@@ -321,7 +322,6 @@ const NavbarLg = () => {
                     </Link>
 
                     {/* for cart */}
-
                     {isActive && items.name === "Cart" && (
                       <div
                         className="absolute z-[999] bg-[#22222258] h-screen w-full top-0 left-0"

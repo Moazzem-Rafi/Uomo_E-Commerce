@@ -63,7 +63,7 @@ const Login = ({unMount}) => {
         <p className="texts_14_regular text-second text-center">
           No account yet?{" "}
           <Link
-            to="/register"
+            to="/login-register"
             className="text-head underline underline-offset-2"
           >
             Create Account
