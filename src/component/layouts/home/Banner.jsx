@@ -1,3 +1,4 @@
+
 import Images from "@/component/common/Images";
 import React, { useRef, useState } from "react";
 import bannerRightImg from "@/assets/images/bannerRightImg.png";
@@ -15,8 +16,8 @@ const Banner = () => {
   const sliderData = [1, 2, 3, 4]; 
 
   return (
-    <section>
-      <div className="mx-15 relative">
+    <section className="">
+      <div className="lg:mx-15 mx-0 relative">
         
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -31,11 +32,10 @@ const Banner = () => {
         >
           {sliderData.map((_, idx) => (
             <SwiperSlide key={idx}>
-              {/* BG Image-ke eikhane niye asha hoyeche jate ota slide hoy */}
-              <div className="bg-[url('./assets/images/bannerBg.png')] bg-no-repeat bg-cover bg-center pt-14.25 pb-0.5">
+              <div className="bg-[url('./assets/images/bannerBg.png')] bg-no-repeat bg-cover bg-center lg:pt-35.25">
                 <div className="container">
                   <div className="flex items-end">
-                    <div className="leftContent w-[63%]">
+                    <div className="leftContent lg:w-[63%] w-[40%]">
                       <div className="flex items-center gap-3.25">
                         <div className="w-10 h-0.5 bg-second-red"></div>
                         <p className="texts_14_medium text-second-red">NEW TREND</p>
@@ -45,7 +45,6 @@ const Banner = () => {
                       </h1>
                       <Button className={"hover:after:w-24"} btnText={"DISCOVER MORE"} />
 
-                      {/* Slider Dots Start */}
                       <div className="mt-48.75 mb-13.75 flex gap-1.5">
                         {sliderData.map((_, index) => (
                           <div
@@ -75,7 +74,6 @@ const Banner = () => {
           ))}
         </Swiper>
 
-        {/* FIXED ELEMENTS - Eigulo slide hobe na */}
         <div className="absolute top-1/2 -left-10 -translate-y-[50%] flex flex-col gap-y-6.25 z-10">
           <Link><FaFacebookF className="text-[#767676]" size={15} /></Link>
           <Link><FaTwitter className="text-[#767676]" size={15} /></Link>

@@ -265,31 +265,20 @@ const SingleBlog = () => {
               </div>
 
               <div className="space-y-7.5">
-                <div>
-                  <textarea
-                    placeholder="Your Review"
-                    className="w-full border border-footer p-4.25 h-53.25 outline-none focus:border-head texts_14_regular text-second"
-                  />
+                <div className="textarea-container w-full">
+                  <textarea id="message" placeholder=" " className="textarea"></textarea>
+                  <label htmlFor="message" className="textarea-label">ADD REVIEW</label>
                 </div>
 
-                <div className="relative">
-                  <label className="absolute -top-3 left-3 bg-white px-1 texts_14_regular text-head">
-                    Name *
-                  </label>
-                  <input
-                    type="text"
-                    defaultValue="Ali"
-                    className="w-full border border-head p-4.25 outline-none"
-                  />
+                <div className="input-container w-full">
+                  <input type="text" id="" placeholder=" " className="input" />
+                  <label className="label">Name *</label>
                 </div>
 
-                {/* Email Input */}
-                <div>
-                  <input
-                    type="email"
-                    placeholder="Email address *"
-                    className="w-full border border-footer texts_14_regular text-second p-4.25 outline-none focus:border-head"
-                  />
+
+                <div className="input-container w-full">
+                  <input type="text" id="" placeholder=" " className="input" />
+                  <label className="label">Email address * </label>
                 </div>
               </div>
               <div className="flex items-center gap-2.75 mt-7.5">
