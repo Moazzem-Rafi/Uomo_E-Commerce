@@ -151,6 +151,12 @@ const About = () => {
             {/* Brand Logos */}
             <div className=" flex items-center gap-[108px] justify-between">
              <img src={mango} alt="" />
+             <img src={mango} alt="" />
+             <img src={mango} alt="" />
+             <img src={mango} alt="" />
+             <img src={mango} alt="" />
+             <img src={mango} alt="" />
+             <img src={mango} alt="" />
             </div>
 
           </div>
