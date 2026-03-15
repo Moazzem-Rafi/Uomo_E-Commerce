@@ -32,10 +32,8 @@ const DashboardAddress = () => {
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 lg:gap-[91px]">
           {addresses.map((address) => (
-            <div
-              key={address.id}
-              className="border border-[#4aa8d8] p-4 sm:p-5"
-            >
+            <div key={address.id} className="p-4 sm:p-5">
+
               {/* Card Header */}
               <div className="flex justify-between items-center mb-4">
                 <span className="text-[13px] font-bold tracking-[0.08em]">
