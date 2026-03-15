@@ -212,7 +212,6 @@ const RegiLog = () => {
             </div>
 
             {/* ══ LOGIN FORM ══ */}
-            {/* ══ LOGIN FORM ══ */}
             {activeTab === "login" && (
               <div className="flex flex-col">
                 {loginSuccess && (
@@ -221,7 +220,7 @@ const RegiLog = () => {
                   </div>
                 )}
 
-                {/* Username field — mb-[30px] */}
+                {/* Username field */}
                 {loginInputs.map((input, index) => (
                   <div
                     key={input.id}
