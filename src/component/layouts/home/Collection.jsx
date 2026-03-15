@@ -9,9 +9,9 @@ import Button from "@/component/common/Button";
 const Collection = () => {
   return (
     <>
-      <section className="mt-25">
+      <section className="lg:mt-25 mt-3.75 px-3.75 lg:px-0">
         <div className="container">
-          <div className="grid grid-cols-2 gap-7.5">
+          <div className="grid lg:grid-cols-2 grid-cols-1  gap-7.5">
             <div className="relative group overflow-hidden">
               <Images className={""} imgSrc={womencollection} />
               <div className=" absolute bottom-10 left-10  ">
@@ -23,7 +23,7 @@ const Collection = () => {
                 <Button className={"hover:after:w-12.5"} btnText={"SHOP NOW"} />
               </div>
             </div>
-            <div className="flex-wrap">
+            <div className="lg:flex-wrap">
               <div className="relative group overflow-hidden">
                 <Images className={" "} imgSrc={mencollection} />
                 <div className="absolute bottom-10 left-10 ">
