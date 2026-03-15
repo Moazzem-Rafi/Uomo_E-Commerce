@@ -14,7 +14,7 @@ const menuItems = [
 
 const DashboardItems = () => {
   const location = useLocation();
-  const [activeItem, setActiveItem] = useState("My Account");
+  const [activeItem, setActiveItem] = useState("DASHBOARD");
 
   return (
     <section className=" ">
