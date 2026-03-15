@@ -29,6 +29,8 @@ import Store_location from "./component/storeLocator/Store_location";
 import Terms from "./page/Terms";
 import ComingSoonPg from "./page/ComingSoonPg";
 import RegiLog from "./component/auth/regiLog/RegiLog";
+import About from "./page/About";
+import SingleBlog from "./component/common/SingleBlog";
 
 const router = createBrowserRouter([
   {
@@ -83,12 +85,15 @@ const router = createBrowserRouter([
       },
       // for Faq
       { path: "faq", element: <Faq /> },
+      // for Faq
+      { path: "/about", element: <About/>},
 
       //for logout
       { path: "/logout", element: <LogOut /> },
 
       // for blog-post
       { path: "/elements/blog-posts", element: <BlogPost /> },
+      { path: "/elements/blog", element: <SingleBlog /> },
       // for terms and condition
       { path: "/elements/terms", element: <Terms /> },
 
