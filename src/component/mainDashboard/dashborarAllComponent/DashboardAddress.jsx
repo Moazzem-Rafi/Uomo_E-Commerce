@@ -39,13 +39,13 @@ const DashboardAddress = () => {
 
   return (
     <>
-      <section className="mt-6 lg:mt-25 px-4 sm:px-6 lg:ml-5 lg:px-0 bg-amber-100">
+      <section className="mt-6 lg:mt-25 px-4 sm:px-6 lg:ml-5 lg:px-0 ">
         <div className="w-full lg:w-216.75">
           <div style={{ fontFamily: "sans-serif", padding: "1rem 0" }}>
 
             {/* Heading */}
             <p
-              style={{ fontSize: "14px", color: "#666", marginBottom: "2rem" }}
+              className="texts_14_regular mb-15.25 "
             >
               The following addresses will be used on the checkout page by
               default.
