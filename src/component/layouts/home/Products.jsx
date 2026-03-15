@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import product from "@/assets/images/product.png";
 import mixitup from "mixitup";
 import Button from "@/component/common/Button";
+import Container from "@/component/common/Container";
 
 const Products = () => {
   const containerRef = useRef(null);
@@ -23,7 +24,7 @@ const Products = () => {
   return (
     <>
       <section className="mt-23.5">
-        <div className="container">
+       <Container>
           <div className="heading text-center">
             <h2 className="lg:head_35_regular font-medium text-[26px]  text-head">
               OUR TRENDY{" "}
@@ -66,7 +67,7 @@ const Products = () => {
           </div>
           <div
             ref={containerRef}
-            className="mt-5.5 flex flex-wrap justify-center gap-7.5 "
+            className="mt-5.5 grid lg:grid-cols-4 grid-cols-2 justify-center lg:gap-7.5 gap-3.5 "
           >
             <div className="mix all newArrivals bestSeller">
               <Product
@@ -146,7 +147,7 @@ const Products = () => {
           <div className="mt-10.5 text-center">
             <Button className={"hover:after:w-24"} btnText={"SEE ALL PRODUCT"}/>
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );
