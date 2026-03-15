@@ -313,4 +313,16 @@ const footerData = {
   ],
 };
 
-export { navItems, quickLinks, cartItems, navTabsData, footerData };
+const shopList1 = [
+  { id: 1, title: "#STAYHOME", value: "stayhome" },
+  { id: 2, title: "NEW IN", value: "new-in" },
+  { id: 3, title: "JACKETS", value: "jackets" },
+  { id: 4, title: "HOODIES", value: "hoodies", active: true },
+  { id: 5, title: "MEN", value: "men" },
+  { id: 6, title: "WOMEN", value: "women" },
+  { id: 7, title: "TROUSERS", value: "trousers" },
+  { id: 8, title: "ACCESSORIES", value: "accessories" },
+  { id: 9, title: "SHOES", value: "shoes" },
+];
+
+export { navItems, quickLinks, cartItems, navTabsData, footerData, shopList1 };

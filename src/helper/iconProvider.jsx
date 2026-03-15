@@ -5,6 +5,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 
 import { HiMiniBars3CenterLeft } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
+import { IoFilterSharp } from "react-icons/io5";
 
 import {
   FaFacebookF,
@@ -86,6 +87,7 @@ const allIcons = {
       link: "https://www.pinterest.com",
     },
   ],
+  filter: <IoFilterSharp />,
 };
 
 export default allIcons;
