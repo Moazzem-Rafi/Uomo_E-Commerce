@@ -35,7 +35,7 @@ const allIcons = {
       id: 3,
       name: "Wishlist",
       icon: <FiHeart />,
-      link: "/wishlist",
+      link: "/dashboard/wishlist",
       badge: null,
     },
     {

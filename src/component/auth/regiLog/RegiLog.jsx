@@ -314,21 +314,31 @@ const RegiLog = () => {
                 )}
 
                 {registerInputs.map((input, index) => (
-                  <div key={input.id} className={`flex flex-col gap-1 ${
-  index === 0 ? "mb-[29px]"
-  : index === 1 ? "mb-[30px]"
-  : "mb-[30px]"
-}`}>
-                    <div className={`relative ${
-  input.name === "password" || input.name === "confirmpassword"
-    ? "border border-gray-300 focus-within:border-black transition-colors"
-    : ""
-}`}>
-  {(input.name === "password" || input.name === "confirmpassword") && (
-    <label className="absolute -top-2.5 left-3 bg-white px-1 leading-6 text-[14px] text-head">
-      {input.placeholder} <span className="text-red-500">*</span>
-    </label>
-  )}
+                  <div
+                    key={input.id}
+                    className={`flex flex-col gap-1 ${
+                      index === 0
+                        ? "mb-[29px]"
+                        : index === 1
+                          ? "mb-[30px]"
+                          : "mb-[30px]"
+                    }`}
+                  >
+                    <div
+                      className={`relative ${
+                        input.name === "password" ||
+                        input.name === "confirmpassword"
+                          ? "border border-gray-300 focus-within:border-black transition-colors"
+                          : ""
+                      }`}
+                    >
+                      {(input.name === "password" ||
+                        input.name === "confirmpassword") && (
+                        <label className="absolute -top-2.5 left-3 bg-white px-1 leading-6 text-[14px] text-head">
+                          {input.placeholder}{" "}
+                          <span className="text-red-500">*</span>
+                        </label>
+                      )}
                       <input
                         type={input.type}
                         name={input.name}
@@ -336,10 +346,11 @@ const RegiLog = () => {
                         value={formdata[input.name]}
                         onChange={handleRegChange}
                         className={`w-full px-4 py-4 text-sm text-gray-700 outline-none placeholder-gray-400 transition-colors ${
-  input.name === "password" || input.name === "confirmpassword"
-    ? "bg-transparent border-0"
-    : "border border-gray-300 focus:border-black"
-}`}
+                          input.name === "password" ||
+                          input.name === "confirmpassword"
+                            ? "bg-transparent border-0"
+                            : "border border-gray-300 focus:border-black"
+                        }`}
                       />
                       {input.name === "password" && (
                         <span
