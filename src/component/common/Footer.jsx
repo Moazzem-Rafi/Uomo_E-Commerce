@@ -12,7 +12,7 @@ const Footer = () => {
   const { socialIcons } = allIcons;
 
   return (
-    <footer className="bg-footer">
+    <footer className="bg-footer ">
       <Container>
         {/* ── MAIN GRID ── */}
         <div className="grid grid-cols-1  lg:grid-cols-7 lg:gap-x-5 gap-y-[50px] py-[50px] lg:pt-[100px] lg:pb-[88px]">
