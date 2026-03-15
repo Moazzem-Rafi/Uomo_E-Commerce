@@ -70,13 +70,6 @@ const Contact = () => {
             </label>
           </div>
 
-          {/* <div className="input-container">
-            <textarea
-              placeholder="Your Review"
-              className="w-full border border-footer p-[17px] h-[213px] outline-none focus:border-head texts_14_regular text-[#767676"
-            />
-          </div> */}
-
           {/* Submit Button */}
           <button
             type="submit"
