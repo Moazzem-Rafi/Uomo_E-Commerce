@@ -12,7 +12,7 @@ const menuItems = [
 
 const getHeading = (pathname) => {
   const matched = menuItems.find((item) => pathname.endsWith(item.path));
-  return matched ? matched.label : "MY ACCOUNT";
+  return matched ? matched.label : "My Account";
 };
 
 const DashborardItems = ({ onClose }) => {
@@ -32,16 +32,19 @@ const DashborardItems = ({ onClose }) => {
               <Link
                 to={item.path}
                 onClick={onClose}
-                className="block"
+                className="block relative"
                 style={{
                   fontWeight: "500",
                   fontSize: "14px",
                   lineHeight: "40px",
                   color: isActive ? "#C32929" : "#222",
-                 
                 }}
               >
                 {item.label}
+                {/* Active underline */}
+                {isActive && (
+                  <span className="absolute bottom-0 left-0 w-10 h-0.5 bg-[#C32929]" />
+                )}
               </Link>
             </li>
           );
